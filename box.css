@@ -1,0 +1,18 @@
+.heading{
+    border: 1px solid red;
+    width: 300px;
+    text-align: center;
+    margin: 100px 50px;
+    /* 순서대로 상우하좌 */
+    padding: 100px 50px;
+}
+
+.box{
+    font-size: 50px;
+    border: 1px solid red;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    box-sizing: border-box;
+    /* box-sizing을 주면 padding과 margin이 그 안에서 논다. */
+}
