@@ -1,0 +1,26 @@
+a{
+    /* Inline요소 */
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    width: 300px; /*적용X*/
+    height: 300px; /*적용X*/
+    margin: 50px; /*상하마진X*/
+    display: block; /*블럭의 특성은 다 적용된다.*/
+    text-align: center;
+}
+
+div{
+    /* Block요소 */
+    border: 1px solid dodgerblue;
+    height: 100px;
+    margin: 50px;
+}
+
+img{
+    /* Inline-Block요소 */
+    border: 1px solid dodgerblue;
+    margin: 50px;
+    /* 상하좌우 마진을 모두 가진다. */
+}
+
