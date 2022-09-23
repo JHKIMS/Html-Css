@@ -18,3 +18,7 @@
 기본 너비값은 컨텐츠의 너비값<br>
 ***크기값 가질 수 있음***<br>
 ***상하 margin 가질 수 있음***
+
+block요소 - margin:auto로 중앙정렬
+
+inline, inline-block요소는 - 부모 요소에 text-align:center로 중앙정렬 가능 
