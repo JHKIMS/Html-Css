@@ -1,0 +1,53 @@
+.container{
+    border: 1px solid red;
+    width: 1200px;
+    margin: auto;
+}
+
+header{
+    background-color: skyblue;
+    overflow: hidden;
+}
+header article{
+    background-color: grey;
+    width: 300px;
+    height: 100px;
+}
+.logo{
+    float:left;
+}
+.navi{
+    float:right;
+}
+
+.box1{
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+.box2{
+    background-color: greenyellow;
+    overflow: hidden;
+    border: 5px solid blue;
+}
+
+.box2 article{
+    width: 33.333333333%;
+    /* 보통 width는 다 따로따로 넣어준다. */
+    height: 300px;
+    float: left;
+}
+.sub1{
+    background-color: darkgray;
+}
+.sub2{
+    background-color: lightgray;
+}
+.sub3{
+    background-color: lightslategray;
+}
+
+footer{
+    background-color: skyblue;
+    height: 100px;
+}
