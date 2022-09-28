@@ -3,7 +3,7 @@
     width: 600px;
     height: 300px;
     position: relative;
-    margin-bottom: 5px; /* 구별을 위한 margin-bottom값 */
+    margin-bottom: 5px; /* 구별을 위한 margin값 */
 }
 
 .child{
@@ -23,6 +23,7 @@
     width: 500px;
     height: 500px;
     border: 2px solid #000;
+    margin-bottom: 5px; /* 구별하기 위한 margin값*/
 }
 
 .childbox{
@@ -44,3 +45,36 @@
 }
 
 /* 구분선2 */
+.box2{
+    position: relative;
+    border : 5px solid red;
+    width: 600px;
+    height: 300px;
+}
+
+.sample{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 150px;
+    height: 100px;
+    left: 0;
+    top: 100%;
+}
+
+.sample2{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 150px;
+    height: 100px;
+    top: 0;
+    left: 100%;
+}
+
+.sample3{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 150px;
+    height: 100px;
+    top: 100%;
+    left: 100%
+}
