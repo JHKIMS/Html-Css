@@ -1,0 +1,46 @@
+.parent{
+    background-color: dodgerblue;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 5px; /* 구별을 위한 margin-bottom값 */
+}
+
+.child{
+    background-color: crimson;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* 구분선 */
+
+
+.box{
+    position:relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+}
+
+.childbox{
+    position: absolute;
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+}
+
+.modal{
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 부모요소가 커지던 작아지던 수평,수직 중앙을 유지한다. */
+}
+
+/* 구분선2 */
