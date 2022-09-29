@@ -1,0 +1,30 @@
+.dropdown{
+    display: inline-block;
+}
+.dropdown-btn{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.dropdown-submenu{
+    width: 200px;
+    display: none;
+}
+.dropdown-submenu a{
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+    text-align: center;
+    color: black;
+}
+.dropdown-submenu a:hover{
+    background-color: #eee;
+}
+.dropdown:hover .dropdown-submenu {
+    display: block;
+}
