@@ -1,0 +1,53 @@
+a{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    background-color: #ddd;
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+}
+
+#box1{
+    background-color: dodgerblue;
+    height: 200px;
+    margin-top: 10px;
+    width: 230px;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    display: none;
+}
+
+.container{
+    width: 300px;
+}
+
+.show-btn{
+    margin-bottom: 20px;
+}
+
+
+.container div{
+    background-color: dodgerblue;
+    color: white;
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 300px;
+    /* display: none; */
+}
+.container a{
+    background-color: #ddd;
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+}
+.container div.active{
+    background-color: red;
+}
