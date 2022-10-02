@@ -1,0 +1,83 @@
+body{
+    font-weight: 300;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.gnb{
+    margin-right: 30px;
+}
+.gnb a{
+    font-size: 12px;
+}
+
+.gnb a:before {
+    content:'01';
+    background-color: royalblue;
+    color: #fff;
+    width: 20px;
+    height: 20px; 
+    border-radius: 50%;
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    font-size:12px;
+}
+
+.gnb a:after {
+    content: 'update';
+    font-size: 12px;
+    background-color: crimson;
+    color: #fff;
+    margin-left: 5px;
+    padding: 2px;
+    border-radius: 3px;
+
+}
+
+/*  구분선이다.  */
+
+.test{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.137);
+    padding: 50px 30px;
+    display: flex;
+}
+
+.test li{
+    flex: 1;
+    text-align: center;
+}
+
+.test li a{
+    font-size: 14px;
+    position: relative;
+}
+
+.test li a:before{
+    content: '';
+    position: absolute;
+    background-color: dodgerblue;
+    height: 2px;
+    width: 5px;
+    bottom: -10px;
+    transition: 0.5s;
+    left:50%;
+    transform: translateX(-50%);
+}
+.test li a:hover:before {
+    width: 100%;
+}
