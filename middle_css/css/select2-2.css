@@ -13,6 +13,7 @@ img{
     width: 300px;
     height: 350px;
     position: relative;
+    overflow: hidden;
 }
 input[name=tabmenu]{
     display: none;
@@ -21,7 +22,7 @@ input[name=tabmenu]{
     position: absolute;
     /* display: none; */
     top: 0;
-    left: 0;
+    left: -50px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -47,6 +48,7 @@ input[id=tab2]:checked ~.slide2,
 input[id=tab3]:checked ~.slide3 {
     opacity: 1;
     visibility: visible;
+    left: 0;
 }
 
 input[id=tab1]:checked ~.btn label[for=tab1],
@@ -54,5 +56,50 @@ input[id=tab2]:checked ~.btn label[for=tab2],
 input[id=tab3]:checked ~.btn label[for=tab3] {
     background-color: crimson;
 }
-
+input[id=tab1]:checked ~.heading .text1{
+    transform: translateY(0);   
+    opacity: 0.7;
+    transition-delay: 0.3s;
+}
+input[id=tab2]:checked ~.heading .text2{
+    transform: translateY(0);   
+    opacity: 0.7;
+    transition-delay: 0.3s;
+}
+input[id=tab3]:checked ~.heading .text3{
+    transform: translateY(0);   
+    opacity: 0.7;
+    transition-delay: 0.3s;
+}
 /* 추가되는 부분 */
+.text1, .text2, .text3{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.text1 span, .text2 span, .text3 span{
+    font-size: 20px;
+    display: block;
+    margin-top: 5px;
+}
+.text1{
+    background-color: black;
+}
+.text2{
+    background-color: dodgerblue;
+}
+.text3{
+    background-color: yellowgreen;
+}
