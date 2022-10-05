@@ -32,34 +32,45 @@ input[name=tabmenu]{
 }
 .items div h1{
     font-size: 80px;
+    text-align:center;
     font-weight: normal;
     color: white;
     position: relative;
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
 }
 .btn{
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
+    height: 50px;
+    line-height: 50px;
     width: 100%;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .btn label{
     display: inline-block;
-    height: 5px;
-    width: 50px;
-    background-color: #fff;
     cursor: pointer;
+    color: #fff;
+    margin: 0 15px;
 }
 .items div:nth-child(1){
     background: url(/img/Last1.jpg) no-repeat center center;
+    background-attachment: fixed;
+    /*background: url(/img/Last1.jpg) no-repeat center center fixed; 동일하다 */
     background-size: cover;
 }
 .items div:nth-child(2){
     background: url(/img/Last2.png) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .items div:nth-child(3){
-    background: url(/img/Last3.jpg) no-repeat center center;
+    background: url(/img/Last3.webp) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .items div:nth-child(1):before,
 .items div:nth-child(2):before,
@@ -73,10 +84,10 @@ input[name=tabmenu]{
     background: linear-gradient(135deg, black, transparent);
 }
 .items div:nth-child(2):before{
-    background: linear-gradient(135deg, red, transparent);
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.23), transparent);
 }
 .items div:nth-child(3):before{
-    background: linear-gradient(135deg, black, transparent);
+    background: linear-gradient(135deg, lightgray, transparent);
 }
 
 input[id=tab1]:checked ~ .tabs .items{
@@ -92,5 +103,18 @@ input[id=tab3]:checked ~ .tabs .items{
 input[id=tab1]:checked ~ .btn label[for=tab1],
 input[id=tab2]:checked ~ .btn label[for=tab2],
 input[id=tab3]:checked ~ .btn label[for=tab3]{
-    background-color: #000;
+    color: crimson;
+}
+
+input[id=tab1]:checked ~.tabs .items div:nth-child(1) h1{
+    transform: translateY(200px);
+    opacity: 1;
+}
+input[id=tab2]:checked ~.tabs .items div:nth-child(2) h1{
+    transform: translateY(200px);
+    opacity: 1;
+}
+input[id=tab3]:checked ~.tabs .items div:nth-child(3) h1{
+    transform: translateY(200px);
+    opacity: 1;
 }
