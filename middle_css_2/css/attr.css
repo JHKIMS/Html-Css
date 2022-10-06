@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.gnb a{
+    border: 1px solid green;
+    width: 300px;
+    display: block;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.gnb a:before,
+.gnb a:after {
+    content: attr(data-text);
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.gnb a:before{
+    background-color: dodgerblue;
+    top: 0;
+}
+.gnb a:after{
+    background-color: #222;
+    top:100%;
+}
+.gnb a:hover:before{
+    top: -100%;
+}
+.gnb a:hover:after{
+    top: 0;
+}
