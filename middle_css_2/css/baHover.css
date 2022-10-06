@@ -1,0 +1,32 @@
+
+a{
+    color:#222;
+    text-decoration: none;
+}
+
+.gnb{}
+.gnb a{
+    position: relative;
+}
+.gnb a:before{
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    transition: 0.5s;
+    /* 1번째 right: 0; 이 속성 추가시 오른쪽에서 시작한다. */
+    /* 2번째 left: 0; */
+    /* 3번째left: 50%;
+    transform: translateX(-50%); + width: 1px*/
+    transform: translateX(-50%);
+    left: 50%;
+
+}
+.gnb a:hover:before{
+    /* 2번째 left: calc(100% - 4px); */
+    /* 3번째 width: 100%; */
+    width: 0;
+}
+
